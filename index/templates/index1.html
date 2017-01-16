@@ -1,0 +1,12 @@
+{% extends 'WORK/base_bootstrap/base.html' %}
+
+{% load staticfiles %}
+{# после ввода в base.html настройки static, теперь во всех шаблонах нужно вводить load staticfiles #}
+
+{% block index %}
+<span class="glyphicon glyphicon-arrow-right"></span>  {# кнопка какая-то #}
+    Я главная страница
+<div class="alert alert-info">
+  <a href="http://promma.by{# здесь встовляется ссылка на партнерскую программу #}" target="_blank" class="alert-link"> Перейти на promma.by </a>
+</div>
+{% endblock %}

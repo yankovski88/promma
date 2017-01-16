@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block universal %}
+
+{% for to in ak2 %}
+
+    <h1>{{ to.ak_title|safe }}</h1>
+    {{ to.ak_text|safe }}<br>
+    {{ to.ak_date }}<br>
+{% endfor %}
+{% endblock %}
+
+

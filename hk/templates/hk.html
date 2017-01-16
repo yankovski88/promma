@@ -1,0 +1,13 @@
+{% extends 'WORK/base_bootstrap/base.html' %}
+
+{% block universal %}
+   <h1> </h1><br>
+{% for to in hk2 %}
+
+    <h1>{{ to.hk_title|safe }}</h1><br>
+    {{ to.hk_text|safe }}<br>
+    {{ to.hk_date }}<br>
+{% endfor %}
+{% endblock %}
+
+

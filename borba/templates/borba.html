@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block universal %}
+
+{% for to in borba2 %}
+
+    <h>{{ to.borba_title|safe }}</h>
+    {{ to.borba_text|safe }}<br>
+    <!-- to.borba_date }}<br>-->
+{% endfor %}
+{% endblock %}
+
+

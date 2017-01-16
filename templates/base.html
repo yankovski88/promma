@@ -1,0 +1,190 @@
+<!DOCTYPE html> {# <!DOCTYPE html> это ознаечает что это html5 #}
+{% load staticfiles %} {# нужно и здесь эту строчку добовлять иначе не работает #}
+<!--% load compress %}вставили наш компрессор
+% compress css %}-->
+
+<html lang="ru">
+  <head> {# начало head #}
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MixFight</title>
+<link rel="icon" type="image/ico" href="{% static "faviconpromma.ico" %}"><!-- Ввели в настройку для favicona ВСТАЛ КАРТИНКА-->
+
+
+      <script><!--код отслеживания статистики и возврата сайта-->
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-90305471-1', 'auto');
+  ga('send', 'pageview');
+
+</script><!--конец код отслеживания статистики и возврата сайта-->
+
+
+
+
+    <!-- Bootstrap -->
+      <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- для мобил уменьшать экран -->
+    <link href='{% static "css/bootstrap.min.css" %}' rel="stylesheet">
+      <link href='{% static "css/mystyle.css" %}' rel="stylesheet">{# вставили наш файл mystyle.css #}
+      <link href="{% static  "fonts/glyphicons-halflings-regular.eot" %}" rel="stylesheet">
+<link href="{% static  "fonts/glyphicons-halflings-regular.svg" %}" rel="stylesheet">
+<link href="{% static  "fonts/glyphicons-halflings-regular.ttf" %}" rel="stylesheet">
+<link href="{% static  "fonts/glyphicons-halflings-regular.woff" %}" rel="stylesheet">
+      {# пути наших конок, на всякий случай #}
+      {# поменяли скопированый пример с бутсрапа, добавили ковыки и { }%%  и подключили bootstrap.min.css" #}
+
+
+
+
+
+        <!--Начало настроек foundation-->
+    <!--% compress css %}  начало сжатия -->
+    <link rel="stylesheet" href="{% static "css/foundation.css" %}" /> {# "% static  %}" #}
+    <link rel="stylesheet" href="{% static "css/normalize.css" %}" /> {# "% static  %}" еще добавили normalise.css #}
+    <link rel="stylesheet" href="{% static "css/mystylefoundation.css" %}" /> {# "% static  %}" еще добавили mystyle.css #}
+    <!--% endcompress %} конец сжатия-->
+
+    <!--% load compress %}сжатие js файлов-->
+    <script src="{% static "js/vendor/modernizr.js" %}"></script> {# тоже самые прописи ковычек и статика #}
+    <!--% endcompress %}конец сжатия js файлов-->
+    <!--конец настроек foundation-->
+
+
+
+
+
+
+
+      <img src="http://mma-max.ru/wp-content/uploads/2016/11/%D1%84%D0%BE%D0%BD-%D0%BD%D0%B0-%D1%81%D0%B0%D0%B9%D1%82-1.jpg" width="100%" height="" alt="альтернативный текст">
+
+      <nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+      <a class="navbar-brand" href="/">Главная</a> {# ввел ссылку на главную #}
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <!--
+        <li><a href="/uroki/">Видео полных уроков</a></li>
+
+        <li><a href="#">Магазин</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Видео боев<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">UFC</a></li>
+            <li><a href="#">Bellator</a></li>
+            <li><a href="#">M-1</a></li>
+          </ul>
+        </li>   -->
+          <li><a href="/borba">Уроки борьбы</a></li>
+          <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Обучение удару рукой в ММА<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="/lp">Левый прямой (Джеб)</a></li>
+            <li><a href="/pp">Правый прямой</a></li>
+            <li><a href="/lb">Левый боковой</a></li>
+              <li><a href="/pb">Правый боковой</a></li>
+            <li><a href="/lo">Левый апперкот</a></li>
+            <li><a href="/po">Правый апперкот</a></li>
+              <li><a href="/bk">Бэкфист</a></li>
+          </ul>
+        </li>
+          <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Обучение удару ногой в ММА<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="/ak">Ап-кик</a></li>
+            <li><a href="/lk">Лоу-кик</a></li>
+            <li><a href="/mdlk/">Мидл-кик</a></li>
+              <li><a href="/hk">Хай-кик</a></li>
+            <li><a href="/udsr">Прямой удар с разворота</a></li>
+
+          </ul>
+        </li>
+          <!--
+          <li><a href="#">Новости</a></li>
+          <li><a href="#">Статьи</a></li>
+          -->
+          <li><a href="/yumor">Юмор</a></li>
+          <!--<li><a href="/us">О нас</a></li>-->
+
+
+          </ul>
+        </li>
+
+      </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+
+
+
+  </head> {# Конец head #}
+
+  <!--  -->
+ <body>
+
+{# начало счетчика #}
+<!--LiveInternet counter--<script type="text/javascript"><!--
+document.write("<a href='//www.liveinternet.ru/click' "+
+"target=_blank><img src='//counter.yadro.ru/hit?t11.6;r"+
+escape(document.referrer)+((typeof(screen)=="undefined")?"":
+";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+";"+Math.random()+
+"' alt='' title='LiveInternet: показано число просмотров за 24"+
+" часа, посетителей за 24 часа и за сегодня' "+
+"border='0' width='88' height='31'><\/a>")
+//--</script><!--/LiveInternet-->
+{# конец счетчика #}
+
+
+{% block universal %} {% endblock %}  {# вот добавили блок чтобы потом все время не добовлять #}
+
+    <!--начало последних настроек bootstrap jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src='{% static "js/bootstrap.min.js" %}'></script>
+  {# конец настроек bootsrap последние также добавили кавычки и скобочки и %#}
+
+
+  <!--Начало2 настроек foundation-->
+    <!--% compress css %}  начало сжатия -->
+     <script src="{% static "js/vendor/jquery.js" %}"></script> {# допись static#}
+    <script src="{% static "js/foundation.min.js" %}"></script> {# допись static#}
+    <!--% endcompress %}конец сжатия js файлов-->
+    <script>
+      $(document).foundation();
+    </script>
+    <!--конец2 настроек foundation-->
+
+
+  </body>
+
+</html>

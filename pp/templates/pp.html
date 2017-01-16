@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block universal %}
+   <h1> </h1><br>
+{% for to in pp1 %}
+
+    <h1>{{ to.pp_title|safe }}</h1><br>
+    {{ to.pp_text|safe }}<br>
+    {{ to.pp_date }}<br>
+{% endfor %}
+{% endblock %}
+
+

@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+
+{% block universal %}
+<form action="/yumor/dobavit/" method="post"> {# наша страница и дублирование Post #}
+
+{% csrf_token %} {# это защита чтобы данные не могли подменить #}
+{{ form.as_p }}{# и отображаем нашу форму #}
+
+{# as_p это форма будет ввиде строк для удобстава как тег p #}
+
+
+<input type="submit" value="Отправить"> {# делаем нашу кнопку Отправить #}
+</form>
+<h2><b><a href="/yumor/">Назад<img alt="smiley" height="20" src="http://filyanin.ru/_pages/service/ckeditor/plugins/smiley/images/regular_smile.gif" title="smiley" width="20"><img alt="smiley" height="20" src="http://filyanin.ru/_pages/service/ckeditor/plugins/smiley/images/regular_smile.gif" title="smiley" width="20"><img alt="smiley" height="20" src="http://filyanin.ru/_pages/service/ckeditor/plugins/smiley/images/regular_smile.gif" title="smiley" width="20">
+
+{% endblock %}

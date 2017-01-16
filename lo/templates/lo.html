@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block universal %}
+   <h1> </h1><br>
+{% for to in lo2 %}
+
+    <h1>{{ to.lo_title|safe }}</h1><br>
+    {{ to.lo_text|safe }}<br>
+    {{ to.lo_date }}<br>
+{% endfor %}
+{% endblock %}
+
+

@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block universal %}
+   <h1> </h1><br>
+
+
+
+
+
+{% for to in uroki1 %}
+
+    <h1>{{ to.uroki_title|safe }}</h1><br>
+    {{ to.uroki_text|safe }}<br>
+    {{ to.uroki_date }}<br>
+{% endfor %}
+{% endblock %}
+
+

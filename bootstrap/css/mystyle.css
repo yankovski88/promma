@@ -1,0 +1,38 @@
+/* my */
+
+.navbar-default {
+    background-color: rgb(139, 139, 139);
+    border-color: #000000;
+}
+/* цвет текста, содержащий название сайта или бренда */
+.navbar-default .navbar-brand {
+    color: #000000;
+}
+
+/* цвет текста (название сайта или бренда), при поднесении к нему курсора мышки или при его нахождении в фокусе */
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: #5722ff;
+}
+
+/* Цвет пунктов навигационного меню */
+.navbar-default .navbar-nav > li > a {
+    color: #000000;
+}
+
+
+/* Цвет пункта меню, при поднесении к нему курсора мышки или при его нахождении в фокусе */
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #5722ff;
+}
+
+/*фон вместо белого на всех страницах*/
+body {
+    background-color: #000;
+    background-image: url('http://www.conquestmma.co.uk/gallery/fb4dc3849b8698d220822e02127cc5b4_1920x800.jpg');
+   /* background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center top;*/
+
+}

@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+
+{% load staticfiles %}
+{# после ввода в base.html настройки static, теперь во всех шаблонах нужно вводить load staticfiles #}
+
+{% block universal %}
+
+
+
+    <div class="row"><!--начало адаптивной разметки на 2 части по 6-->
+  <div class="large-6 medium-6 small-6 columns"><ul class="example-orbit" data-orbit
+  data-options="animation:slide;
+                  timer_speed: 3000;
+                  pause_on_hover: false;
+                  animation_speed:500;
+                  navigation_arrows: true;
+                  bullets:false;">
+
+  ><!--начало large-6 columns-->
+  <li>
+    <img src="{% static "media/index/emelianenko_borba.jpg" %}" alt="борба в мма" />
+    <div class="orbit-caption">
+      Борьба
+    </div>
+  </li>
+  <li class="active">
+    <img src="{% static "media/index/udarka rukami v mma.jpg" %}" alt="ударка руками в мма" />
+    <div class="orbit-caption">
+      Удары руками в ММА
+    </div>
+  </li>
+  <li>
+    <img src="{% static "media/index/volkov.jpeg" %}"  alt="ударка ногами в мма" />
+    <div class="orbit-caption">
+      Удары ногами в ММА
+    </div>
+  </li>
+</ul>
+  </div><!--конец large-6 columns-->
+  <div class="large-6 medium-6 small-6 columns">Сайт создается для популяризации смешанных единоборств, в котором будут собраны уроки лучших бойцов на планете.</div>
+</div><!--конец адаптивной разметки на 2 части по 6-->
+
+
+
+
+
+
+    <p align="center"><h1>Обучение ММА</h1></p>
+
+<img src="http://i.imgur.com/qfUHjfT.jpg" width="100%" height="auto" alt="альтернативный текст">
+
+
+
+    <p align="center"><h5>Сайт находится в разработке, каждый день будет что-то меняться и дополняться.</h5></p>
+    <h5><b><font color="#008000">Уже есть ОЧЕНЬ полезная информация, как стать сильным бойцом.</font></b></h5>
+{% for to in index3 %}
+    <h1>{{ to.title_index|safe }}</h1>
+        {{ to.text_index|safe }}
+
+
+{% endfor %}
+{% endblock %}
+
+

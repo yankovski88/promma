@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block universal %}
+{% for to in sidemount2 %}
+
+    <h3>{{ to.sidemount_title|safe }}</h3>
+    {{ to.sidemount_text|safe }}<br>
+    {{ to.sidemount_date }}<br>
+{% endfor %}
+{% endblock %}
+
+

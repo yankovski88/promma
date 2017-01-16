@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block universal %}
+   <h1> </h1><br>
+{% for to in lppp %}
+
+    <h1>{{ to.lp_title|safe }}</h1><br>
+    {{ to.lp_text|safe }}<br>
+    {{ to.lp_date }}<br>
+{% endfor %}
+{% endblock %}
+
+

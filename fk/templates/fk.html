@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block universal %}
+
+{% for to in fk2 %}
+
+    <h1>{{ to.fk_title|safe }}</h1>
+    {{ to.fk_text|safe }}<br>
+    {{ to.fk_date }}<br>
+{% endfor %}
+{% endblock %}
+
+

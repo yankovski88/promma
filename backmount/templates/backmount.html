@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block universal %}
+
+{% for to in backmount2 %}
+
+    <h1>{{ to.backmount_title|safe }}</h1>
+    {{ to.backmount_text|safe }}<br>
+    {{ to.backmount_date }}<br>
+{% endfor %}
+{% endblock %}
+
+

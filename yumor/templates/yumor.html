@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+
+{% block universal %}
+<h1><a href="/yumor/dobavit/">Добавить чёт смешное:)</a></h1>
+
+{% for to in yumor_base2 %}
+
+    <h1>{{ to.title|safe }}</h1><br>
+    {{ to.text_ckred|safe }}<br>
+
+{% endfor %}
+
+{% csrf_token %} {# это защита чтобы данные не могли подменить #}
+{{ form.as_p }}{# и отображаем нашу форму #}
+
+{# as_p это форма будет ввиде строк для удобстава как тег p #}
+
+
+
+
+{% endblock %}

@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block universal %}
+   <h1> </h1><br>
+{% for to in us1 %}
+    <h1>{{ to.us_title|safe }}</h1><br>
+    {{ to.us_text|safe }}<br>
+    {{ to.us_date }}<br>
+{% endfor %}
+{% endblock %}

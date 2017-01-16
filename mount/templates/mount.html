@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block universal %}
+{% for to in mount2 %}
+
+    <h3>{{ to.mount_title|safe }}</h3>
+    {{ to.mount_text|safe }}<br>
+    {{ to.mount_date }}<br>
+{% endfor %}
+{% endblock %}
+
+

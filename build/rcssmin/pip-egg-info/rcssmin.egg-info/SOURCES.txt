@@ -1,0 +1,8 @@
+README.rst
+rcssmin.c
+rcssmin.py
+./rcssmin.py
+pip-egg-info/rcssmin.egg-info/PKG-INFO
+pip-egg-info/rcssmin.egg-info/SOURCES.txt
+pip-egg-info/rcssmin.egg-info/dependency_links.txt
+pip-egg-info/rcssmin.egg-info/top_level.txt

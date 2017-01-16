@@ -1,0 +1,8 @@
+README.rst
+rjsmin.c
+rjsmin.py
+./rjsmin.py
+pip-egg-info/rjsmin.egg-info/PKG-INFO
+pip-egg-info/rjsmin.egg-info/SOURCES.txt
+pip-egg-info/rjsmin.egg-info/dependency_links.txt
+pip-egg-info/rjsmin.egg-info/top_level.txt
